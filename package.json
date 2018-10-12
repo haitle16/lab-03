@@ -1,7 +1,7 @@
 {
   "name": "file-reader",
   "version": "1.0.0",
-  "description": "",
+  "description": "![CF](http://i.imgur.com/7v5ASc8.png) 03: Asynchronous Callbacks ===",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -15,6 +15,16 @@
   "license": "ISC",
   "dependencies": {
     "eslint": "^5.6.1",
+    "faker": "^4.1.0",
     "jest": "^23.6.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haitle16/lab-03.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haitle16/lab-03/issues"
+  },
+  "homepage": "https://github.com/haitle16/lab-03#readme"
 }
