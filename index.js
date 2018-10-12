@@ -1,7 +1,8 @@
 'use strict';
 
-const fileReader = require('./lib/reader.js');
-
+// const fileReader = require('./lib/reader.js');
+// const fileReader = require('./lib/reader-callback-extended.js')
+const fileReader = require('./lib/reader-promise.js')
 // Obtain and assert input
 let files = process.argv.slice(2);
 if( ! (files instanceof Array && files.length) ) {
@@ -10,5 +11,8 @@ if( ! (files instanceof Array && files.length) ) {
 
 fileReader(files, (err,data) => {
   if ( err ) { throw err; }
+  console.log(data);
   console.log('From Callback:', data);
 });
+
+
