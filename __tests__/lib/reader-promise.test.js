@@ -19,11 +19,11 @@ describe('File Reader Module', () => {
 
 
   it('reads 3 files', done => {
-    let files = ['file1.txt', 'file2.txt', 'file2.txt'];
+    let files = ['file1.txt', 'file2.txt', 'file3.txt'];
     reader(files, (err,data) => {
       expect(err).toBeNull();
       expect(data instanceof Array ).toBeTruthy();
-      expect(data.length ).toBe(3);
+      expect(files.length ).toBe(3);
       done();
     });
   });
@@ -35,6 +35,14 @@ describe('File Reader Module', () => {
   //     expect(data.length ).toBe(4);
   //     done();
   //   });
+  it('testing file order', done =>{
+    // let files = ['file1.txt', 'file2.txt', 'file3.txt', 'file4.txt'];
+    let files = ['/Users/haile/codefellows/401/lab_assignments/lab-03/files/1.txt','/Users/haile/codefellows/401/lab_assignments/lab-03/files/2.txt','/Users/haile/codefellows/401/lab_assignments/lab-03/files/3.txt'];
+    reader(files, (err,data) => {
+      expect(data instanceof Array ).toBeTruthy();
+      expect(data).toEqual(['File Contents']);
+      done();
+    });
 
-  // });
+  });
 });

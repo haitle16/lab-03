@@ -3,7 +3,6 @@ const fs = require('fs');
 const faker = require('faker');
 let files = process.argv[2];
 // console.log(files);
-// let files = ['/Users/haile/codefellows/401/lab_assignments/lab-03/files/1.txt','/Users/haile/codefellows/401/lab_assignments/lab-03/files/2.txt','/Users/haile/codefellows/401/lab_assignments/lab-03/files/3.txt'];
 // if( ! (files instanceof Array && files.length) ) {
 //   throw new Error('Invalid Args');
 // }
